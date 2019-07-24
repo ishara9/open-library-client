@@ -1,0 +1,37 @@
+<div class="container mt-3 mb-3">
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input class="form-control" ngModel type="text" name="title" id="title" />
+    </div>
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input class="form-control" ngModel type="text" name="author" id="author" />
+    </div>
+    <div class="form-group">
+      <label for="isbn">ISBN</label>
+      <input class="form-control" ngModel type="text" name="isbn" id="isbn" />
+    </div>
+    <div class="form-group">
+      <label for="quantity">Quantity</label>
+      <input class="form-control" ngModel type="number" name="quantity" id="quantity" />
+    </div>
+    <div class="form-group">
+      <label for="frontCover">URL for Front Cover</label>
+      <input class="form-control" ngModel type="text" name="frontCover" id="frontCover" />
+    </div>
+    <div class="form-group">
+      <label for="backCover">URL for Back Cover</label>
+      <input class="form-control" ngModel type="text" name="backCover" id="backCover" />
+    </div>
+    <div class="form-group">
+      <label for="lang">Language</label>
+      <input class="form-control" ngModel type="text" name="lang" id="lang" />
+    </div>
+    <div class="form-group">
+      <label for="desc">Description</label>
+      <textarea class="form-control" ngModel type="textarea" name="desc" id="desc"></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">Create</button>
+  </form>
+</div>
